@@ -17,17 +17,52 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 const sandwichMaker = () => {
-<<<<<<< HEAD
-  let str = 'One sandwich with tomato';
-  let func = (...args) => str = str + ' and ' + [...args];
+  let str1 = ['One sandwich with tomato'];
+  let and = [];
+  let search = []
+  let commaWords = ''
   
-  return func;
-=======
-  let sentence = "One sandwich with tomato";
-  let make = (...allStr) => sentence = sentence + " and " + [...allStr]; return make;
->>>>>>> 544fd641bedf0f35b2b54383c45bd96a12881bff
+  return func = (args) => {
+      search.push(args)
+      //console.log(search)
+      //console.log(search)
+      let index = 0;
+      while (index < search.length - 1) {
+          //console.log(search[index])
+          if (!commaWords.includes(search[index])){
+              commaWords += ', ' + search[index]    
+          }
+          
+          index++
+
+      }
+      while (index < search.length) {
+          //console.log(search[index])
+          and = ' and ' + search[index];
+          index++
+      }
+     
+          
+      
+   
+    console.log(str1 + commaWords + and)
+  };
+ 
+  
 }
 
+let sandwich = sandwichMaker(); // => returns a function
+sandwich("spinach") // => "One sandwich with tomato and spinach"
+sandwich("jelly") // => "One sandwich with tomato and spinach and jelly"
+sandwich("bread")
+sandwich("ketchup")
+sandwich("salt")
+sandwich("pepper") // => "One sandwich with tomato and spinach and jelly and bread"
+sandwich("garlic")
+
+
+let sandwich2 = sandwichMaker(); // => returns a function
+sandwich2("pb") // => "One sandwich with tomato and pb"
 // Your code here 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
