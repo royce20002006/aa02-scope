@@ -9,15 +9,18 @@ Examples:
 arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
-const arrowMirrorArray = array => {
-  let newArr = [];
+const arrowMirrorArray =(arr) => {
+  let mirrored = [];
 
-  array.forEach((el) => newArr.push(el)) 
-  for (let i = array.length -  1; i >= 0; i--) {
-    let el = array[i];
-    newArr.push(el);
+  for (let i = 0; i < arr.length; i++) {
+    let el = arr[i];
+    mirrored.push(el);
   }
-  return newArr;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    let el = arr[i];
+    mirrored.push(el);
+  }
+  return mirrored;
 }
 // Your code here 
 

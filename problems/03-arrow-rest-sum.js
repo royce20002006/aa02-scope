@@ -12,12 +12,12 @@ arrowRestSum(0); // => 0
 ***********************************************************************/
 
 // Your code here 
-const arrowRestSum = ((...params) => {
+const arrowRestSum = ((...allParam) => {
   let sum = 0;
-  params.forEach((el) => {
-    
-    sum += el;
-  })
+  for (let i = 0; i < allParam.length; i++) {
+    let num = allParam[i];
+    sum += num;
+  }
   return sum;
 })
 

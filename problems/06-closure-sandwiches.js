@@ -18,10 +18,8 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 const sandwichMaker = () => {
   let str = 'One sandwich with tomato';
-  function func(...args) {
-    str =  str + ' and ' + [...args];
-    return str;
-  }
+  let func = (...args) => str = str + ' and ' + [...args];
+  
   return func;
 }
 
