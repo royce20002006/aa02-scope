@@ -29,6 +29,16 @@ Example 4:
 ***********************************************************************/
 
 // Your code here 
+let countDownTimer = (num) => {
+  if (num === 0) return "Happy New Year!";
+
+  let count = () => {
+    num--;
+    if (num === 0) return 'Happy New Year!'
+    return count;
+  }
+  return count;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
