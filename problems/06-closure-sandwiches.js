@@ -16,6 +16,14 @@ let sandwich2 = sandwichMaker(); // => returns a function
 sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
+const sandwichMaker = () => {
+  let str = 'One sandwich with tomato';
+  function func(...args) {
+    str =  str + ' and ' + [...args];
+    return str;
+  }
+  return func;
+}
 
 // Your code here 
 
