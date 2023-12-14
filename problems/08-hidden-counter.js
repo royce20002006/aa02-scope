@@ -14,7 +14,18 @@ hidden2(); // returns 1
 
 
 ***********************************************************************/
+let hiddenCounter = () => {
+  let count = 0;
 
+  return func = () => {
+    count++;
+    return count;
+  }
+  
+  
+  
+
+}
 // Your code here 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
