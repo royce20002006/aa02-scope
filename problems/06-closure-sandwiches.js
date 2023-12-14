@@ -17,12 +17,8 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 const sandwichMaker = () => {
-  let str = 'One sandwich with tomato';
-  function func(...args) {
-    str =  str + ' and ' + [...args];
-    return str;
-  }
-  return func;
+  let sentence = "One sandwich with tomato";
+  let make = (...allStr) => sentence = sentence + " and " + [...allStr]; return make;
 }
 
 // Your code here 
