@@ -13,10 +13,8 @@ Examples:
 
 
 ***********************************************************************/
-let funcTimer = (time, func) => {
-  setTimeout(() => {
-    console.log(func())
-  }, time);
+const funcTimer = (time, func) => {
+  setTimeout(()=>{console.log(func())}, time) 
 }
 // Your code here 
 function partyFunc () {
