@@ -19,6 +19,12 @@ divideByFive(50); // returns 10
 ***********************************************************************/
 
 // Your code here 
+let dynamicDivide = (divisor) => {
+  let div = (num) => {
+    return num / divisor
+  }
+  return div;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
