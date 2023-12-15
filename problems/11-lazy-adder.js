@@ -24,16 +24,16 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // Your code here 
 let lazyAdder = (firstNum) => {
-  let sum = firstNum;
+  
   let add = (secondNum) => {
-    sum += secondNum;
+  
     let addAgain = (thirdNum) => {
-      sum += thirdNum
-      return sum;
-    
+      
+    return firstNum + secondNum + thirdNum
     }
     return addAgain;
   }
+  
   return add;
 }
 

@@ -13,20 +13,22 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 let recVolume = (height) => {
-  let high = height;
-  let wide;
-  let long;
+  let dimensions = [height]
+  let width = (dim) => {
+    if (dimensions.length < 3) dimensions.push(dim);
+    if (dimensions.length === 3) {
+      let measure = dimensions.reduce = ((acc, el) => {
+        acc *= el;
+      })
+      return measure;
+    }
+    else {
+      return width;
+      
+    } 
+  }
   
 
-  let width = (widt) => {
-    wide = widt;
-    let length = (lengt) => {
-      long = lengt;
-      return (high * wide * long)
-      
-    }
-    return length;
-  }
   return width;
 }
 // Your code here 
